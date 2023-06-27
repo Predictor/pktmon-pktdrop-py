@@ -14,7 +14,7 @@ def get_drop_counters():
         for component in group["Components"]:
             for counter in component["Counters"]:
                 name = f"{group['Group']} - {component['Name']} - {counter['Name']}"
-                counters[name] = counter["Inbound"]["Packets"]
+                counters[name] = counter["Inbound"]["Packets"] + counter["Outbound"]["Packets"]
     return counters
 
 def plot_data(q):
