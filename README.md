@@ -26,7 +26,7 @@ You also need to have administrator privileges to run the Packet Monitor tool.
 To run the script, simply execute it from the command line:
 
 ```bash
-python pktmon_drop_counter_plotter.py
+python packet-drop.py
 ```
 
 You should see a plot window showing the total number of dropped packets over time. You can close the window or press Ctrl-C to stop the script.
